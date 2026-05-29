@@ -45,11 +45,11 @@ export default function RegisterPage() {
           </div>
           <div className="form-group">
             <label htmlFor="username">Nom d&apos;utilisateur *</label>
-            <input id="username" value={username} onChange={(e) => setUsername(e.target.value)} placeholder="junior" required />
+            <input id="username" value={username} onChange={(e) => setUsername(e.target.value)} placeholder="votre_pseudo" required />
           </div>
           <div className="form-group">
             <label htmlFor="phone">Numéro Mobile Money *</label>
-            <input id="phone" type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="90123456 ou 97123456" required />
+            <input id="phone" type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="90XXXXXX" required />
             <p className="form-hint">8 chiffres Togo (90–93 ou 96–99), sans +228</p>
           </div>
           <button type="submit" className="btn btn-primary" style={{ width: "100%" }} disabled={loading}>
