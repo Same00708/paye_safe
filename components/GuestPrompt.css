@@ -1,0 +1,45 @@
+.guest-prompt {
+  text-align: center;
+  max-width: 480px;
+  margin: 2rem auto;
+  padding: 2rem 1.5rem;
+}
+
+.guest-prompt-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.guest-prompt h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.35rem;
+}
+
+.guest-prompt p {
+  color: var(--color-text-muted);
+  margin: 0 0 1.25rem;
+}
+
+.guest-prompt-steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  font-size: 0.8rem;
+  color: var(--color-primary-dark);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.guest-prompt-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+@media (min-width: 480px) {
+  .guest-prompt-actions {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
