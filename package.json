@@ -5,7 +5,7 @@
   "scripts": {
     "setup": "node scripts/setup-next.mjs",
     "dev": "npm run setup && next dev",
-    "build": "npm run setup && next build",
+    "build": "node -e \"if(require('fs').existsSync('../../web/src')) require('child_process').execSync('npm run setup', {stdio: 'inherit'})\" && next build",
     "start": "next start",
     "lint": "tsc --noEmit",
     "db:migrate": "tsx scripts/migrate.ts"
